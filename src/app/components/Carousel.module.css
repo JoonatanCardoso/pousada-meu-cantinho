@@ -1,0 +1,18 @@
+.container {
+    display: row;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 960px) {
+    .container {
+        height: 80vh;
+    }
+}
+
+@media (max-width: 960px) {
+    .container {
+        height: 60vh;
+    }
+}
