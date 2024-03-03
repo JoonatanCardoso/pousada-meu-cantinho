@@ -54,7 +54,7 @@ export default function SobreNos() {
         </Typography>
       </Grid>
 
-      <Grid className={styles.img} item xs={12} md={5}>
+      <Grid ref={ref} className={styles.img} item xs={11} md={5}>
         <Image
           src="/images/sobre1.svg"
           width={isMobile ? 350 : 400}
@@ -66,7 +66,7 @@ export default function SobreNos() {
           }}
         />
       </Grid>
-      <Grid ref={ref} item xs={11} md={5}>
+      <Grid ref={ref} item xs={10} md={5}>
         <Typography
           className={styles.paragraph}
           color="black"
@@ -84,7 +84,7 @@ export default function SobreNos() {
           necessidades específicas.
         </Typography>
       </Grid>
-      <Grid item xs={11} md={5}>
+      <Grid item xs={10} md={5}>
         <Typography
           className={styles.paragraph}
           color="black"
