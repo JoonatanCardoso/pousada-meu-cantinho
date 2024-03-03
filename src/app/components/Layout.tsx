@@ -169,8 +169,8 @@ export default function Layout() {
                 src="/images/logo-branca.svg"
                 alt="Logo Meu Cantinho"
                 priority={true}
-                width={80}
-                height={40}
+                width={isMobile ? 100 : 100}
+                height={isMobile ? 80 : 80}      
                 style={{ cursor: "pointer" }}
               />
             </Link>
@@ -222,7 +222,7 @@ export default function Layout() {
             >
               <Button
                 className={styles.button}
-                onClick={() => scrollToSection("servicos")}
+                onClick={() => scrollToSection("sobre")}
                 sx={{
                   color: "#000",
                   flex: "center",
