@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Typography } from "@mui/material";
+import { Grid, Typography, useMediaQuery } from "@mui/material";
 import Image from "next/image";
 import styles from "./Footer.module.css";
 
@@ -7,7 +7,9 @@ const handleClick = () => {
   window.open("https://maps.app.goo.gl/cfPZopzhS9yjKxbN7", "_blank");
 };
 
-export function Footer() {
+export default function Footer() {
+  const isMobile = useMediaQuery("(max-width: 960px)");
+
   return (
     <Grid
       className={styles.container}
@@ -61,14 +63,14 @@ export function Footer() {
           src="/images/logo-branca.svg"
           alt="Logo Meu Cantinho"
           priority={true}
-          width={300}
-          height={86}
+          width={isMobile ? 200 : 250}
+          height={isMobile ? 200 : 250}
         />
       </Grid>
       <Grid className={styles.itemsContainer}>
         <Grid padding={2} item xs={12} md={6}>
           <Typography
-            mt={5}
+            mt={isMobile ? 0 : 5}
             className={styles.title}
             color="white"
             variant="h6"
