@@ -1,0 +1,40 @@
+.container {
+    background: white;
+    display: row;
+    min-width: 100vw;
+    justify-content: center;
+    align-items: center;
+    border-top: 20px solid #efbb00;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+@media (min-width: 961px) {
+    .container {
+        padding: 10vh;
+    }
+}
+
+.title {
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.paragraph {
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.img {
+    display: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 960px) {
+    .img {
+        margin-left: 100px;
+    }
+  }
