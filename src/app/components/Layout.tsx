@@ -121,10 +121,10 @@ export default function Layout() {
           target="_blank"
           rel="noreferrer"
         >
-          <Typography mr={4}>(67) 98402-2745</Typography>
+          <Typography mr={4}>(67) 3308-0838</Typography>
         </a>
         <a
-          href="https://wa.me/5567998436686?text=Ol%C3%A1%2C+gostaria+de+fazer+uma+cota%C3%A7%C3%A3o+com+a+UnitsGeo%21"
+          href="https://wa.me/5567984022745?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+a+Pousada+Meu+Cantinho%21"
           target="_blank"
           rel="noreferrer"
         >
