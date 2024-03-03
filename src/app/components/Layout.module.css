@@ -1,0 +1,62 @@
+.main {
+  display: row;
+  justify-content: right;
+  align-items: center;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (min-width: 961px) {
+  .container {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  .navbarSocial {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+}
+
+.navbarSocial {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+.navbarSocial a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu {
+  direction: rtl;
+  flex: 1;
+}
+
+.iconsMenu {
+  margin: 5px;
+}
+
+.logoMobile {
+  margin: 5px;
+}
+
+.button {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #fff;
+  font-weight: 800;
+}
