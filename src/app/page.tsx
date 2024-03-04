@@ -1,11 +1,12 @@
 "use client";
 import React, { useState } from "react";
 import Layout from "./components/Layout";
-import Footer from "./components/Footer";
+import Carousel from "./components/Carousel";
 import SobreNos from "./components/SobreNos";
 import Comodidades from "./components/Comodidades";
+import Acomodacoes from "./components/Acomodacoes";
+import Footer from "./components/Footer";
 import FloatingButton from "./components/FloatingButton";
-import { Carousel } from "./components/Carousel";
 
 export default function Home() {
   const [showContactForm, setShowContactForm] = useState(false);
@@ -20,6 +21,7 @@ export default function Home() {
         <Carousel />
         <SobreNos />
         <Comodidades />
+        <Acomodacoes />
         <Footer />
         <FloatingButton onClick={handleButtonClick} />
       </div>
