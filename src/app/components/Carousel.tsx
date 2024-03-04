@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Grid, useMediaQuery } from "@mui/material";
 import styles from "./Carousel.module.css";
 
-export function Carousel() {
+export default function Carousel() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = ["/images/bloco1.jpg", "/images/bloco2.jpg", "/images/bloco3.jpg", "/images/bloco4.jpg"];
   const isMobile = useMediaQuery("(max-width: 960px)");
