@@ -1,0 +1,60 @@
+.container {
+    background: white;
+    display: row;
+    min-width: 100vw;
+    justify-content: center;
+    align-items: center;
+    border-top: 10px solid #efbb00;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+@media (min-width: 961px) {
+    .container {
+        padding: 10vh;
+    }
+}
+
+.image {
+    display: row;
+    min-height: 500px;
+    min-width: 60vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraph {
+    color: black;
+    padding-bottom: 10px;
+}
+
+@media (min-width: 961px) {
+    .paragraph {
+        font-size: 22px;
+    }
+    .title {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 961px) {
+    .paragraph {
+        font-size: 16px;
+    }
+    .title {
+        font-size: 22px;
+    }
+}
+
+.title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+@media (min-width: 960px) {
+    .img {
+        margin-left: 100px;
+    }
+  }

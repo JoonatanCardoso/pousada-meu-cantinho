@@ -7,6 +7,7 @@ import Comodidades from "./components/Comodidades";
 import Acomodacoes from "./components/Acomodacoes";
 import Footer from "./components/Footer";
 import FloatingButton from "./components/FloatingButton";
+import Galeria from "./components/Galeria";
 
 export default function Home() {
   const [showContactForm, setShowContactForm] = useState(false);
@@ -22,6 +23,7 @@ export default function Home() {
         <SobreNos />
         <Comodidades />
         <Acomodacoes />
+        <Galeria />
         <Footer />
         <FloatingButton onClick={handleButtonClick} />
       </div>
