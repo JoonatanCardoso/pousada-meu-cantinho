@@ -79,7 +79,7 @@ export default function Galeria() {
                 width: "600px",
                 backgroundImage: `url(${images[index]})`,
                 backgroundSize: "cover",
-                backgroundPosition: "bottom",
+                backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
               }}
               onClick={() => handleOpen(index)}
@@ -96,7 +96,7 @@ export default function Galeria() {
                 width: "600px",
                 backgroundImage: `url(${images[(index + 1) % images.length]})`,
                 backgroundSize: "cover",
-                backgroundPosition: "bottom",
+                backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
               }}
               onClick={() => handleOpen((index + 1) % images.length)} // Passa o índice da próxima imagem ao clicar nela
@@ -117,4 +117,5 @@ export default function Galeria() {
         </DialogContent>
       </Dialog>
     </Grid>
-  )
+  );
+}
