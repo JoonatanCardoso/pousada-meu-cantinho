@@ -1,4 +1,11 @@
-import { Button, Dialog, DialogContent, Grid, Typography } from "@mui/material";
+import {
+  Button,
+  Dialog,
+  DialogContent,
+  Grid,
+  Typography,
+  useMediaQuery,
+} from "@mui/material";
 import React, { useState } from "react";
 import styles from "./Acomodacoes.module.css";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
@@ -33,6 +40,8 @@ export default function Galeria() {
     setOpen(false);
   };
 
+  const isMobile = useMediaQuery("(max-width: 960px)");
+
   return (
     <Grid
       className={styles.container}
@@ -54,7 +63,7 @@ export default function Galeria() {
           alignItems: "center",
         }}
       >
-        <Grid xs={11} md={8}>
+        <Grid xs={12} md={8}>
           <Typography
             className={styles.title}
             color="black"
@@ -73,8 +82,8 @@ export default function Galeria() {
               justifyContent="center"
               alignItems="center"
               style={{
-                cursor: 'pointer',
-                borderRadius: '10px',
+                cursor: "pointer",
+                borderRadius: "10px",
                 height: "300px",
                 width: "600px",
                 backgroundImage: `url(${images[index]})`,
@@ -84,23 +93,27 @@ export default function Galeria() {
               }}
               onClick={() => handleOpen(index)}
             />
-            <Grid
-              margin={1}
-              container
-              justifyContent="center"
-              alignItems="center"
-              style={{
-                cursor: 'pointer',
-                borderRadius: '10px',
-                height: "300px",
-                width: "600px",
-                backgroundImage: `url(${images[(index + 1) % images.length]})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-              }}
-              onClick={() => handleOpen((index + 1) % images.length)} // Passa o índice da próxima imagem ao clicar nela
-            />
+            {!isMobile && (
+              <Grid
+                margin={1}
+                container
+                justifyContent="center"
+                alignItems="center"
+                style={{
+                  cursor: "pointer",
+                  borderRadius: "10px",
+                  height: "300px",
+                  width: "600px",
+                  backgroundImage: `url(${
+                    images[(index + 1) % images.length]
+                  })`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }}
+                onClick={() => handleOpen((index + 1) % images.length)} // Passa o índice da próxima imagem ao clicar nela
+              />
+            )}
             <Button onClick={handleNext}>
               <KeyboardArrowRightIcon />
             </Button>
