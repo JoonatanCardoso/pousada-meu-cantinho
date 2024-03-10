@@ -1,4 +1,12 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    // output: "export",
+    // distDir: "build",
+    // images: {
+    //   loader: "custom",
+    //   loaderFile: "./images-loader.ts",
+    // },
+  };
+  
+  export default nextConfig;
+  
