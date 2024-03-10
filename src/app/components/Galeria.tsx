@@ -47,7 +47,7 @@ export default function Galeria() {
       className={styles.container}
       container
       style={{
-        backgroundImage: "url(/images/galeria.svg)",
+        backgroundImage: "url(/images/galeria.jpg)",
         backgroundSize: "cover",
         backgroundPosition: "top",
         backgroundRepeat: "no-repeat",
@@ -70,7 +70,7 @@ export default function Galeria() {
             variant="h4"
             component="h4"
           >
-            Nossas Acomodações
+            Galeria
           </Typography>
           <Grid display="flex">
             <Button onClick={handlePrev}>
