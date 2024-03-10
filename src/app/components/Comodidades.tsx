@@ -1,10 +1,13 @@
 "use client";
-import { Grid, Typography } from "@mui/material";
+import { Grid, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
 import styles from "./Comodidades.module.css";
 import Image from "next/image";
 
 export default function Comodidades() {
+
+  const isMobile = useMediaQuery("(max-width: 960px)");
+
   return (
     <Grid
       className={styles.container}
@@ -26,7 +29,7 @@ export default function Comodidades() {
           <div
             style={{
               borderBottom: "1px solid white",
-              width: "30%",
+              width: isMobile ? "10%" : "30%",
               marginBottom: "6px",
               display: "inline-block",
               marginRight: "15px",
@@ -36,7 +39,7 @@ export default function Comodidades() {
           <div
             style={{
               borderBottom: "1px solid white",
-              width: "30%",
+              width: isMobile ? "10%" : "30%",
               marginBottom: "6px",
               display: "inline-block",
               marginLeft: "15px",
