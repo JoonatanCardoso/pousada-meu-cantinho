@@ -32,7 +32,8 @@ export default function SobreNos() {
   }, []);
 
   return (
-    <Grid ref={ref}
+    <Grid
+      ref={ref}
       className={styles.container}
       id={"sobre"}
       justifyContent="center"
@@ -76,12 +77,14 @@ export default function SobreNos() {
             opacity: isVisible ? 1 : 0,
           }}
         >
-          Fundada em janeiro de 2020 em Dourados/MS, a UnitsGeo é uma empresa
-          especializada em consultoria ambiental e topográfica, atendendo em
-          todo o estado de Mato Grosso do Sul, Mato Grosso e Paraná. Com uma
-          equipe de profissionais qualificados, comprometidos em entregar
-          resultados sob medida para cada cliente, sempre alinhados às suas
-          necessidades específicas.
+          A história da pousada Meu Cantinho começou por volta de 1987, quando
+          éramos uma república e gerenciávamos uma pequena lanchonete em frente.
+          À medida que as necessidades da república evoluíam e com a inspiração
+          das sugestões dos nossos clientes, decidimos por volta de 2007
+          transformar nosso espaço em uma pousada. Essa mudança se revelou um
+          grande acerto, proporcionando um ambiente acolhedor para nossos
+          hóspedes e possibilitando-nos conhecer pessoas incríveis e cultivar
+          novas amizades.
         </Typography>
       </Grid>
       <Grid item xs={10} md={5}>
@@ -94,12 +97,12 @@ export default function SobreNos() {
             opacity: isVisible ? 1 : 0,
           }}
         >
-          Fundada em janeiro de 2020 em Dourados/MS, a UnitsGeo é uma empresa
-          especializada em consultoria ambiental e topográfica, atendendo em
-          todo o estado de Mato Grosso do Sul, Mato Grosso e Paraná. Com uma
-          equipe de profissionais qualificados, comprometidos em entregar
-          resultados sob medida para cada cliente, sempre alinhados às suas
-          necessidades específicas.
+          Hoje, continuamos dedicados a oferecer um serviço acolhedor e
+          atencioso, atendendo nossos hóspedes e amigos com todo o carinho que
+          nos trouxe até aqui. Meu Cantinho é um lugar onde cada pessoa se sente
+          verdadeiramente em casa, encontrando conforto e tranquilidade. Nossa
+          história é marcada por transformação, representando uma jornada de
+          crescimento pessoal e profissional para nós.
         </Typography>
       </Grid>
       <Grid className={styles.img} item xs={12} md={4}>
