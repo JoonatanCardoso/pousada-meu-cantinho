@@ -119,13 +119,12 @@ export default function Comodidades() {
         </Grid>
       </Grid>
       <Grid
-        xs={12}
+        xs={11}
         md={8}
         style={{
           borderBottom: "1px solid white",
           marginTop: "6px",
           display: "inline-block",
-          marginLeft: "15px",
         }}
       ></Grid>
     </Grid>

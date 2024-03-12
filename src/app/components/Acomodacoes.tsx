@@ -2,7 +2,6 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
 import styles from "./Acomodacoes.module.css";
-import Image from "next/image";
 
 export default function Acomodacoes() {
   return (
@@ -11,14 +10,14 @@ export default function Acomodacoes() {
         className={styles.image}
         container
         style={{
-          backgroundImage: "url(/images/acomod.svg)",
+          backgroundImage: "url(/images/acomod.png)",
           backgroundSize: "cover",
           backgroundPosition: "top",
           backgroundRepeat: "no-repeat",
         }}
       >
         <Grid container className={styles.text}
-            xs={11}
+            xs={10}
             md={8}
             sx={{
               background: "white",
@@ -27,7 +26,7 @@ export default function Acomodacoes() {
               alignItems: "center",
             }}>
           <Grid
-            xs={11}
+            xs={10}
             md={8}
           >
             <Typography

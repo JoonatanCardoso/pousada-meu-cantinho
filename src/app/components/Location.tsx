@@ -164,7 +164,7 @@ export default function Location() {
       </Grid>
       <Grid className={styles.img} item xs={11} md={5}>
         <Image
-          src="/images/loc.svg"
+          src="/images/loc.png"
           width={isMobile ? 350 : 450}
           height={isMobile ? 350 : 450}
           alt="Localização"

@@ -21,7 +21,7 @@ const images = [
 export default function Galeria() {
   const [index, setIndex] = useState(0);
   const [open, setOpen] = useState(false);
-  const [modalIndex, setModalIndex] = useState(0); // Novo estado para controlar o índice da imagem na janela modal
+  const [modalIndex, setModalIndex] = useState(0);
 
   const handleNext = () => {
     setIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -44,10 +44,11 @@ export default function Galeria() {
 
   return (
     <Grid
+      id={"galeria"}
       className={styles.container}
       container
       style={{
-        backgroundImage: "url(/images/galeria.jpg)",
+        backgroundImage: "url(/images/galeria.png)",
         backgroundSize: "cover",
         backgroundPosition: "top",
         backgroundRepeat: "no-repeat",
@@ -55,7 +56,7 @@ export default function Galeria() {
     >
       <Grid
         container
-        xs={11}
+        xs={12}
         md={12}
         sx={{
           display: "row",
@@ -121,11 +122,11 @@ export default function Galeria() {
         </Grid>
       </Grid>
       <Dialog open={open} onClose={handleClose}>
-        <DialogContent>
+        <DialogContent sx={{ maxHeight: "80vh" }}>
           <img
             src={images[modalIndex]}
             alt={`Imagem ${modalIndex}`}
-            style={{ width: "100%", height: "80vh" }}
+            style={{ maxWidth: "100%" }}
           />
         </DialogContent>
       </Dialog>

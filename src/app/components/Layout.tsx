@@ -21,8 +21,10 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import Link from "next/link";
 
 type Anchor = "left";
-
 export default function Layout() {
+  
+  const isMobile = useMediaQuery("(max-width: 960px)");
+  const isDesktop = useMediaQuery("(min-width: 960px)");
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -100,16 +102,13 @@ export default function Layout() {
     </Box>
   );
 
-  const isMobile = useMediaQuery("(max-width: 960px)");
-  const isDesktop = useMediaQuery("(min-width: 960px)");
-
   return (
     <Grid
       className={styles.main}
       container
       sx={{ flexDirection: { xs: "row", md: "row" } }}
       style={{
-        backgroundImage: "url(/images/navbar.svg)",
+        backgroundImage: "url(/images/navbar.png)",
         backgroundSize: "cover",
         backgroundPosition: "top",
         backgroundRepeat: "no-repeat",

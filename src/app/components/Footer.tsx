@@ -16,7 +16,7 @@ export default function Footer() {
       container
       sx={{ flexDirection: { xs: "row", md: "row" } }}
       style={{
-        backgroundImage: "url(/images/footer-image.svg)",
+        backgroundImage: "url(/images/footer-image.png)",
         width: "100vw",
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -41,7 +41,7 @@ export default function Footer() {
         >
           <Image
             className={styles.imageMaps}
-            src="/images/map.svg"
+            src="/images/map.png"
             alt="Mapa"
             layout="fill"
             objectFit="cover"

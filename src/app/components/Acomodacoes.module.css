@@ -50,6 +50,9 @@
     .title {
         font-size: 22px;
     }
+    .text {
+        min-height: 40vh;
+    }
 }
 
 .title {
