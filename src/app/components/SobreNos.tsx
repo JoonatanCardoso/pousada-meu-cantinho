@@ -46,10 +46,6 @@ export default function SobreNos() {
           color="black"
           variant="h4"
           component="h4"
-          style={{
-            transition: "opacity 0.5s",
-            opacity: isVisible ? 1 : 0,
-          }}
         >
           Conheça nossa história
         </Typography>
@@ -61,10 +57,6 @@ export default function SobreNos() {
           width={isMobile ? 350 : 400}
           height={isMobile ? 350 : 400}
           alt="Quem Somos"
-          style={{
-            transition: "opacity 2s",
-            opacity: isVisible ? 1 : 0,
-          }}
         />
       </Grid>
       <Grid ref={ref} item xs={10} md={5}>
@@ -72,10 +64,6 @@ export default function SobreNos() {
           className={styles.paragraph}
           color="black"
           variant="subtitle1"
-          style={{
-            transition: "opacity 2s",
-            opacity: isVisible ? 1 : 0,
-          }}
         >
           A história da pousada Meu Cantinho começou por volta de 1987, quando
           éramos uma república e gerenciávamos uma pequena lanchonete em frente.
@@ -92,10 +80,6 @@ export default function SobreNos() {
           className={styles.paragraph}
           color="black"
           variant="subtitle1"
-          style={{
-            transition: "opacity 5s",
-            opacity: isVisible ? 1 : 0,
-          }}
         >
           Hoje, continuamos dedicados a oferecer um serviço acolhedor e
           atencioso, atendendo nossos hóspedes e amigos com todo o carinho que
@@ -111,10 +95,6 @@ export default function SobreNos() {
           width={isMobile ? 350 : 400}
           height={isMobile ? 350 : 400}
           alt="Quem Somos"
-          style={{
-            transition: "opacity 5s",
-            opacity: isVisible ? 1 : 0,
-          }}
         />
       </Grid>
     </Grid>
